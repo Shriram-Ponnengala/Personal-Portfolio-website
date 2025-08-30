@@ -1215,6 +1215,17 @@ body {
   border: 1px solid var(--border-medium);
 }
 
+.credential-link {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.credential-link:hover {
+  background: var(--brand-primary);
+  color: var(--text-inverse);
+  transform: translateY(-1px);
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .hero-content {
