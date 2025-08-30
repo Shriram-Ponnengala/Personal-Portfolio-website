@@ -58,12 +58,21 @@ const Footer = () => {
               </div>
               
               <div className="footer-section">
-                <h3 className="footer-title">Services</h3>
+                <h3 className="footer-title">Academy</h3>
                 <ul className="footer-list">
+                  <li>
+                    <a 
+                      href="https://venturechessacademy.com/" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="footer-link"
+                    >
+                      Venture Chess Academy
+                    </a>
+                  </li>
                   <li><span className="footer-text">Individual Coaching</span></li>
                   <li><span className="footer-text">Group Classes</span></li>
                   <li><span className="footer-text">Tournament Prep</span></li>
-                  <li><span className="footer-text">Online Training</span></li>
                 </ul>
               </div>
               
