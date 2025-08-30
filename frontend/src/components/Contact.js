@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Send, CheckCircle, MessageCircle, Instagram, Linkedin, Facebook, Crown } from "lucide-react";
 import { useToast } from "../hooks/use-toast";
 
 const Contact = () => {
@@ -52,14 +52,47 @@ const Contact = () => {
     {
       icon: <Phone size={24} />,
       title: "Phone",
-      content: "+91 98765 43210",
-      action: "tel:+919876543210"
+      content: "+91 95670 27370",
+      action: "tel:+919567027370"
     },
     {
       icon: <MapPin size={24} />,
       title: "Location",
       content: "Mangalore, Karnataka, India",
       action: null
+    }
+  ];
+
+  const socialQuickLinks = [
+    {
+      name: "WhatsApp",
+      icon: <MessageCircle size={20} />,
+      url: "https://wa.me/+919567027370",
+      color: "#25D366"
+    },
+    {
+      name: "Instagram", 
+      icon: <Instagram size={20} />,
+      url: "https://www.instagram.com/shriram_ponnengala/",
+      color: "#E4405F"
+    },
+    {
+      name: "LinkedIn",
+      icon: <Linkedin size={20} />,
+      url: "https://www.linkedin.com/in/shriram-ponnengala-101642287/",
+      color: "#0A66C2"
+    },
+    {
+      name: "Facebook",
+      icon: <Facebook size={20} />,
+      url: "https://www.facebook.com/shriramponnengala",
+      color: "#1877F2"
+    },
+    {
+      name: "Lichess",
+      icon: <Crown size={20} />,
+      url: "https://lichess.org/@/Shriram_Ponnengala",
+      color: "#F5F5F5"
     }
   ];
 
@@ -100,6 +133,25 @@ const Contact = () => {
                   </div>
                 </div>
               ))}
+            </div>
+            
+            <div className="social-quick-links">
+              <h4 className="social-quick-title">Connect on Social Media</h4>
+              <div className="social-icons-grid">
+                {socialQuickLinks.map((social, index) => (
+                  <a
+                    key={index}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-icon-link"
+                    style={{ '--social-color': social.color }}
+                  >
+                    {social.icon}
+                    <span>{social.name}</span>
+                  </a>
+                ))}
+              </div>
             </div>
             
             <div className="coaching-info">
