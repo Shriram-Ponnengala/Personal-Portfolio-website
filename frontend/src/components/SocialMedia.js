@@ -50,7 +50,7 @@ const SocialMedia = () => {
   };
 
   return (
-    <section className="social-media-section">
+    <section id="social" className="social-media-section">
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">Connect With Me</h2>
