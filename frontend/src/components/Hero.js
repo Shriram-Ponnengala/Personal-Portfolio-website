@@ -19,7 +19,7 @@ const Hero = () => {
             </h1>
             
             <p className="hero-subtitle">
-              Founder & Head Coach | Venture Chess Academy
+              Founder & Head Coach | <a href="https://venturechessacademy.com/" target="_blank" rel="noopener noreferrer" className="academy-link">Venture Chess Academy</a>
             </p>
             
             <p className="hero-description">
