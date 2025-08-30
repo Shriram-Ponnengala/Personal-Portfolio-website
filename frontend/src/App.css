@@ -969,6 +969,45 @@ body {
   left: 0;
 }
 
+.social-quick-links {
+  margin-bottom: var(--spacing-xl);
+}
+
+.social-quick-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--brand-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.social-icons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-sm);
+}
+
+.social-icon-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm);
+  background: var(--bg-page);
+  border: 1px solid var(--border-medium);
+  border-radius: 12px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.social-icon-link:hover {
+  color: var(--social-color, var(--brand-primary));
+  border-color: var(--social-color, var(--brand-primary));
+  background: rgba(var(--social-color-rgb, 212, 175, 55), 0.05);
+  transform: translateY(-1px);
+}
+
 /* Form Styles */
 .contact-form {
   background: var(--bg-light);
