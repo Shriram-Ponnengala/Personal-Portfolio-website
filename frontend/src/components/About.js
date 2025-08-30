@@ -54,7 +54,6 @@ const About = () => {
             <div className="qualifications">
               <h3 className="qualifications-title">Qualifications</h3>
               <ul className="qualifications-list">
-                <li>BA Graduate</li>
                 <li>Peak FIDE Rating: 1665</li>
                 <li>Certified FIDE National Instructor</li>
                 <li>FIDE Profile: 45044538</li>
