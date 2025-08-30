@@ -25,21 +25,51 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Mock submission - replace with actual API call
-    setTimeout(() => {
+    try {
+      const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+      const response = await fetch(`${BACKEND_URL}/api/contacts`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const responseData = await response.json();
+
+      if (response.ok && responseData.success) {
+        toast({
+          title: "Message Sent Successfully!",
+          description: responseData.message,
+        });
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          experience: '',
+          message: ''
+        });
+      } else {
+        // Handle validation errors or server errors
+        const errorMessage = responseData.detail || 
+                           responseData.message || 
+                           "Failed to send message. Please try again.";
+        toast({
+          title: "Error",
+          description: errorMessage,
+          variant: "destructive"
+        });
+      }
+    } catch (error) {
+      console.error('Error submitting contact form:', error);
       toast({
-        title: "Message Sent Successfully!",
-        description: "Thank you for your interest. I'll get back to you within 24 hours.",
+        title: "Connection Error",
+        description: "Unable to connect to server. Please check your internet connection and try again.",
+        variant: "destructive"
       });
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        experience: '',
-        message: ''
-      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   const contactInfo = [
