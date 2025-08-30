@@ -56,7 +56,18 @@ const Experience = () => {
                 </div>
                 <div className="experience-info">
                   <h3 className="experience-title">{exp.title}</h3>
-                  <h4 className="experience-company">{exp.company}</h4>
+                  {exp.companyUrl ? (
+                    <a 
+                      href={exp.companyUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="experience-company-link"
+                    >
+                      {exp.company}
+                    </a>
+                  ) : (
+                    <h4 className="experience-company">{exp.company}</h4>
+                  )}
                   <div className="experience-period">
                     <Calendar size={16} />
                     <span>{exp.period}</span>
