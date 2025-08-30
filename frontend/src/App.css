@@ -500,6 +500,22 @@ body {
   margin-bottom: var(--spacing-sm);
 }
 
+.experience-company-link {
+  font-size: 1.125rem;
+  color: var(--brand-primary);
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.experience-company-link:hover {
+  border-bottom-color: var(--brand-primary);
+  transform: translateY(-1px);
+}
+
 .experience-period {
   display: flex;
   align-items: center;
