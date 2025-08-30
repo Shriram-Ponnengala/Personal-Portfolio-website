@@ -71,8 +71,16 @@ const Hero = () => {
           
           <div className="hero-image">
             <div className="profile-card">
-              <div className="profile-image-placeholder">
-                <div className="chess-icon">♔</div>
+              <div className="profile-image-container">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_skill-display-47/artifacts/miaidge4_me.jpg"
+                  alt="Shriram Ponnengala - Chess Coach"
+                  className="profile-image"
+                />
+                <div className="profile-badge">
+                  <Award size={16} />
+                  <span>FIDE Certified</span>
+                </div>
               </div>
               <div className="profile-info">
                 <h3>FIDE Profile: 45044538</h3>
