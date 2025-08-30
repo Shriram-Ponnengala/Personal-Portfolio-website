@@ -5,6 +5,7 @@ import About from "./About";
 import Experience from "./Experience";
 import Achievements from "./Achievements";
 import Testimonials from "./Testimonials";
+import SocialMedia from "./SocialMedia";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
@@ -17,6 +18,7 @@ const Portfolio = () => {
       <Experience />
       <Achievements />
       <Testimonials />
+      <SocialMedia />
       <Contact />
       <Footer />
     </div>
