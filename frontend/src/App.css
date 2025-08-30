@@ -1286,6 +1286,23 @@ body {
   .footer-credentials {
     justify-content: center;
   }
+  
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .whatsapp-highlight {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .whatsapp-btn {
+    width: 100%;
+  }
+  
+  .social-icons-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 480px) {
