@@ -242,19 +242,21 @@ class PortfolioAPITester:
     def test_cors_headers(self):
         """Test CORS headers are present"""
         try:
-            response = self.session.options(f"{self.base_url}/health", timeout=10)
+            # Test with a GET request and Origin header to trigger CORS
+            headers = {"Origin": "https://example.com"}
+            response = self.session.get(f"{self.base_url}/health", headers=headers, timeout=10)
             
             cors_headers = [
                 "Access-Control-Allow-Origin",
-                "Access-Control-Allow-Methods",
-                "Access-Control-Allow-Headers"
+                "Access-Control-Allow-Credentials"
             ]
             
             present_headers = [h for h in cors_headers if h in response.headers]
             
             if len(present_headers) >= 1:  # At least one CORS header should be present
+                origin_header = response.headers.get("Access-Control-Allow-Origin", "")
                 self.log_test("CORS Headers", True,
-                            f"CORS headers present: {present_headers}")
+                            f"CORS headers present: {present_headers}, Origin: {origin_header}")
             else:
                 self.log_test("CORS Headers", False,
                             "No CORS headers found in response")
