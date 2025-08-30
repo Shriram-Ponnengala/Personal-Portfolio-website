@@ -6,6 +6,7 @@ const Experience = () => {
     {
       title: "Founder & Head Coach",
       company: "Venture Chess Academy",
+      companyUrl: "https://venturechessacademy.com/",
       period: "Present",
       status: "Current",
       achievements: [
