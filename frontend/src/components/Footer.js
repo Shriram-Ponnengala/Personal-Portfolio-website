@@ -109,9 +109,14 @@ const Footer = () => {
                 <Award size={14} />
                 FIDE National Instructor
               </span>
-              <span className="credential-badge">
+              <a 
+                href="https://venturechessacademy.com/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="credential-badge credential-link"
+              >
                 Venture Chess Academy
-              </span>
+              </a>
             </div>
           </div>
         </div>
