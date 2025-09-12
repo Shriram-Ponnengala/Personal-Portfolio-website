@@ -4,6 +4,18 @@ import { Star, Quote } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
+      name: "Muriel Shanessa Fernandes",
+      role: "Parent of Student",
+      content: "Shriram Sir is really a genuine coach who takes real pains to see his students rise higher and higher. My daughter got rating olympiad because of Shriram Sir. And now she achieved the State under 11 champion. Many thanks to Sir Shriram.",
+      rating: 5
+    },
+    {
+      name: "Ian Menezes", 
+      role: "Student",
+      content: "Want to Thank Sriram sir for motivating Ian when he stopped playing chess a year ago and training him to get back on track.",
+      rating: 5
+    },
+    {
       name: "Arjun Sharma",
       role: "Student (Beginner to 1200 Rating)",
       content: "Shriram sir's teaching method is exceptional. He helped me understand chess from basics to achieving my first FIDE rating. His patience and structured approach made learning enjoyable.",
@@ -13,18 +25,6 @@ const Testimonials = () => {
       name: "Priya Nair", 
       role: "Parent of Student",
       content: "My daughter started as a complete beginner and now competes in tournaments confidently. Shriram's personalized coaching and mentoring have been incredible for her development.",
-      rating: 5
-    },
-    {
-      name: "Vikram Reddy",
-      role: "Advanced Student",
-      content: "The tactical training and opening preparation I received helped me win my first district tournament. Shriram sir's strategic insights are invaluable for competitive play.",
-      rating: 5
-    },
-    {
-      name: "Meera Krishnan",
-      role: "Student (Age 12)",
-      content: "Chess classes are so much fun! Sir explains everything clearly and helps me solve puzzles. I love learning new tactics and strategies in each session.",
       rating: 5
     }
   ];
