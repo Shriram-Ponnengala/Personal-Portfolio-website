@@ -38,17 +38,17 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p className="about-description">
-              As the Founder and Head Coach of Venture Chess Academy, I'm dedicated to 
-              building the next generation of chess players. With my FIDE National 
-              Instructor certification and 4+ years of coaching experience, I blend 
-              deep knowledge of theory and strategy with engaging, personalized teaching.
+              As Founder and Head Coach of Venture Chess Academy, I'm passionate about 
+              developing chess talent at every level. With my FIDE National Instructor 
+              certification and 4+ years of experience, I've trained students from age 4 
+              to 40 - from complete beginners to state and national championship competitors.
             </p>
             
             <p className="about-description">
-              My approach combines analytical thinking with creativity, helping students 
-              not just learn chess moves, but develop critical thinking skills that 
-              extend beyond the board. I'm particularly interested in integrating 
-              AI and digital learning tools to enhance the chess education experience.
+              I combine analytical thinking with creative teaching methods, developing not 
+              just chess skills but critical thinking abilities. Beyond the board, I'm 
+              passionate about international relations, technology, and building tools 
+              for the chess community.
             </p>
             
             <div className="qualifications">
