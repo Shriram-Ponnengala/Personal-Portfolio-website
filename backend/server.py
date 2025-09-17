@@ -35,6 +35,13 @@ class ChessExperience(str, Enum):
     advanced = "advanced"
     competitive = "competitive"
 
+class SessionType(str, Enum):
+    consultation = "consultation"
+    individual = "individual"
+    group = "group"
+    tournament_prep = "tournament-prep"
+    online = "online"
+
 class ContactStatus(str, Enum):
     new = "new"
     read = "read"
