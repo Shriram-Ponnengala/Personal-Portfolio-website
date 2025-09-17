@@ -81,8 +81,8 @@ const Footer = () => {
                 <ul className="footer-list">
                   <li className="footer-contact">
                     <Mail size={16} />
-                    <a href="mailto:shriram@venturechess.com" className="footer-link">
-                      shriram@venturechess.com
+                    <a href="mailto:Shrmpnga26@gmail.com" className="footer-link">
+                      Shrmpnga26@gmail.com
                     </a>
                   </li>
                   <li className="footer-contact">
