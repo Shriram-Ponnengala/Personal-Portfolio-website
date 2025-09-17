@@ -14,18 +14,6 @@ const Testimonials = () => {
       role: "Student",
       content: "Want to Thank Sriram sir for motivating Ian when he stopped playing chess a year ago and training him to get back on track.",
       rating: 5
-    },
-    {
-      name: "Arjun Sharma",
-      role: "Student (Beginner to 1200 Rating)",
-      content: "Shriram sir's teaching method is exceptional. He helped me understand chess from basics to achieving my first FIDE rating. His patience and structured approach made learning enjoyable.",
-      rating: 5
-    },
-    {
-      name: "Priya Nair", 
-      role: "Parent of Student",
-      content: "My daughter started as a complete beginner and now competes in tournaments confidently. Shriram's personalized coaching and mentoring have been incredible for her development.",
-      rating: 5
     }
   ];
 
