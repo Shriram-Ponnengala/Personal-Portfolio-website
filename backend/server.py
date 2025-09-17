@@ -27,19 +27,18 @@ async def send_notifications(contact: 'ContactForm'):
     """Send WhatsApp and Email notifications for new contact submissions"""
     try:
         # WhatsApp notification (placeholder - implement with actual WhatsApp API)
-        whatsapp_message = f"New session booking from {contact.name} ({contact.email}). Session type: {contact.sessionType or 'Not specified'}. Message: {contact.message[:100]}..."
+        whatsapp_message = f"New inquiry from {contact.name} ({contact.email}). Experience: {contact.experience or 'Not specified'}. Message: {contact.message[:100]}..."
         logger.info(f"WhatsApp notification would be sent: {whatsapp_message}")
         
         # Email notification (placeholder - implement with actual email service)
-        email_subject = f"New Chess Coaching Session Booking - {contact.name}"
+        email_subject = f"New Chess Coaching Inquiry - {contact.name}"
         email_body = f"""
-        New session booking received:
+        New inquiry received:
         
         Name: {contact.name}
         Email: {contact.email}
         Phone: {contact.phone or 'Not provided'}
         Experience: {contact.experience or 'Not specified'}
-        Session Type: {contact.sessionType or 'Not specified'}
         Message: {contact.message}
         
         Submitted at: {contact.createdAt.isoformat()}
