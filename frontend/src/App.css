@@ -935,6 +935,41 @@ body {
   margin-bottom: var(--spacing-xl);
 }
 
+.notification-info {
+  background: var(--bg-page);
+  padding: var(--spacing-lg);
+  border-radius: 16px;
+  border: 1px solid var(--border-medium);
+  margin-bottom: var(--spacing-xl);
+}
+
+.notification-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--brand-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.notification-list {
+  list-style: none;
+  padding: 0;
+}
+
+.notification-list li {
+  padding: var(--spacing-xs) 0;
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: 20px;
+}
+
+.notification-list li::before {
+  content: "✓";
+  color: #25D366;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
 .contact-item {
   display: flex;
   align-items: center;
