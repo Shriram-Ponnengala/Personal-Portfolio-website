@@ -54,6 +54,7 @@ class ContactFormCreate(BaseModel):
     email: EmailStr
     phone: Optional[str] = Field(None, max_length=20)
     experience: Optional[ChessExperience] = None
+    sessionType: Optional[SessionType] = None
     message: str = Field(..., min_length=10, max_length=1000)
     
     @validator('name')
@@ -74,6 +75,7 @@ class ContactForm(BaseModel):
     email: str
     phone: Optional[str] = None
     experience: Optional[str] = None
+    sessionType: Optional[str] = None
     message: str
     status: ContactStatus = ContactStatus.new
     createdAt: datetime = Field(default_factory=datetime.utcnow)
