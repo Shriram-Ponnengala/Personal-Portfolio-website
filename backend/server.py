@@ -148,7 +148,7 @@ async def create_contact_submission(contact_data: ContactFormCreate):
             
             return ContactFormResponse(
                 success=True,
-                message="Session booking received! You'll receive instant WhatsApp & email notifications with response within 2-4 hours.",
+                message="Inquiry received! You'll receive instant WhatsApp & email notifications with response within 2-4 hours.",
                 data={
                     "id": contact.id,
                     "createdAt": contact.createdAt.isoformat()
