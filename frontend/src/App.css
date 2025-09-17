@@ -408,6 +408,19 @@ body {
   left: 0;
 }
 
+.fide-profile-link {
+  color: var(--brand-primary);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.fide-profile-link:hover {
+  border-bottom-color: var(--brand-primary);
+  transform: translateY(-1px);
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
