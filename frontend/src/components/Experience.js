@@ -12,27 +12,9 @@ const Experience = () => {
       achievements: [
         "Established and manage an academy focused on quality chess education",
         "Lead training programs (online & offline) tailored to student goals",
-        "Mentor players from grassroots to competitive level, with proven rating growth"
-      ]
-    },
-    {
-      title: "Chess Coach",
-      company: "Derik's Chess School",
-      period: "Past",
-      status: "Previous",
-      achievements: [
-        "Delivered structured lessons for diverse age groups",
-        "Helped students transition from casual play to tournament competition"
-      ]
-    },
-    {
-      title: "Chess Coach",
-      company: "Chessbrainz Academy",
-      period: "Past",
-      status: "Previous",
-      achievements: [
-        "Conducted interactive coaching sessions for beginners and intermediates",
-        "Focused on building strong tactical and strategic foundations"
+        "Mentor players from grassroots to competitive level, with proven rating growth",
+        "Built a supportive and interactive learning culture at the academy",
+        "Coached beginners to achieve official FIDE ratings and tournament wins"
       ]
     }
   ];
