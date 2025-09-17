@@ -8,6 +8,7 @@ const Contact = () => {
     email: '',
     phone: '',
     experience: '',
+    sessionType: '',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
