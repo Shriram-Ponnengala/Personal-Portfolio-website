@@ -47,7 +47,6 @@ const Contact = () => {
           email: '',
           phone: '',
           experience: '',
-          sessionType: '',
           message: ''
         });
       } else {
