@@ -51,22 +51,6 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            
-            <div className="hero-buttons">
-              <button 
-                className="btn-primary"
-                onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
-              >
-                Book a Session
-                <ChevronRight size={16} />
-              </button>
-              <button 
-                className="btn-secondary"
-                onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
-              >
-                Learn More
-              </button>
-            </div>
           </div>
           
           <div className="hero-image">
