@@ -143,9 +143,18 @@ const Contact = () => {
             <h3 className="contact-info-title">Let's Connect</h3>
             <p className="contact-info-description">
               Whether you're a complete beginner or looking to improve your competitive game, 
-              I'm here to help you achieve your chess goals. Reach out to discuss personalized 
-              training programs.
+              I'm here to help you achieve your chess goals. When you submit this form, I'll 
+              receive an instant notification on both WhatsApp and email to ensure quick response.
             </p>
+            
+            <div className="notification-info">
+              <h4 className="notification-title">📱 Instant Notifications</h4>
+              <ul className="notification-list">
+                <li>WhatsApp notification for immediate response</li>
+                <li>Email notification with full inquiry details</li>
+                <li>Response within 2-4 hours during business hours</li>
+              </ul>
+            </div>
             
             <div className="contact-details">
               {contactInfo.map((info, index) => (
