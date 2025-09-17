@@ -24,8 +24,8 @@ const Hero = () => {
             
             <p className="hero-description">
               Building the next generation of chess players with 4+ years of coaching experience. 
-              From beginners to competitive tournaments, I help students achieve their chess goals 
-              through personalized training and strategic development.
+              From beginners to competitive tournaments, I help children develop a deep interest and 
+              passion for chess through personalized training.
             </p>
             
             <div className="hero-stats">
