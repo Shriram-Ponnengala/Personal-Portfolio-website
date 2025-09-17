@@ -76,8 +76,8 @@ const Contact = () => {
     {
       icon: <Mail size={24} />,
       title: "Email",
-      content: "shriram@venturechess.com",
-      action: "mailto:shriram@venturechess.com"
+      content: "Shrmpnga26@gmail.com",
+      action: "mailto:Shrmpnga26@gmail.com"
     },
     {
       icon: <Phone size={24} />,
@@ -88,7 +88,7 @@ const Contact = () => {
     {
       icon: <MapPin size={24} />,
       title: "Location",
-      content: "Mangalore, Karnataka, India",
+      content: "Bangalore, Karnataka, India",
       action: null
     }
   ];
