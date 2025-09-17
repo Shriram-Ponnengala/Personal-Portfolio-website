@@ -925,6 +925,18 @@ body {
   background: var(--bg-card);
 }
 
+.contact-info-only {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info-center {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
 .contact-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
