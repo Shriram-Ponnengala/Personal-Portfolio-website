@@ -32,7 +32,7 @@ const Hero = () => {
               <div className="stat-item">
                 <Users size={20} />
                 <div>
-                  <span className="stat-number">50+</span>
+                  <span className="stat-number">300+</span>
                   <span className="stat-label">Students Coached</span>
                 </div>
               </div>
