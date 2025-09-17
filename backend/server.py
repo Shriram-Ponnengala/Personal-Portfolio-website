@@ -22,6 +22,38 @@ mongo_url = os.environ['MONGO_URL']
 client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ['DB_NAME']]
 
+# Notification function
+async def send_notifications(contact: 'ContactForm'):
+    """Send WhatsApp and Email notifications for new contact submissions"""
+    try:
+        # WhatsApp notification (placeholder - implement with actual WhatsApp API)
+        whatsapp_message = f"New session booking from {contact.name} ({contact.email}). Session type: {contact.sessionType or 'Not specified'}. Message: {contact.message[:100]}..."
+        logger.info(f"WhatsApp notification would be sent: {whatsapp_message}")
+        
+        # Email notification (placeholder - implement with actual email service)
+        email_subject = f"New Chess Coaching Session Booking - {contact.name}"
+        email_body = f"""
+        New session booking received:
+        
+        Name: {contact.name}
+        Email: {contact.email}
+        Phone: {contact.phone or 'Not provided'}
+        Experience: {contact.experience or 'Not specified'}
+        Session Type: {contact.sessionType or 'Not specified'}
+        Message: {contact.message}
+        
+        Submitted at: {contact.createdAt.isoformat()}
+        """
+        logger.info(f"Email notification would be sent: {email_subject}")
+        
+        # In a real implementation, you would integrate with:
+        # - WhatsApp Business API or Twilio WhatsApp API
+        # - Email service like SendGrid, AWS SES, or SMTP
+        
+    except Exception as e:
+        logger.error(f"Failed to send notifications: {str(e)}")
+        # Don't raise the exception to avoid breaking the main flow
+
 # Create the main app without a prefix
 app = FastAPI(title="Shriram's Portfolio API", version="1.0.0")
 
