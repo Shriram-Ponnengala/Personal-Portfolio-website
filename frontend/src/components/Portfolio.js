@@ -8,6 +8,7 @@ import Testimonials from "./Testimonials";
 import SocialMedia from "./SocialMedia";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import ScrollToTop from "./ScrollToTop";
 
 const Portfolio = () => {
   return (
@@ -21,6 +22,7 @@ const Portfolio = () => {
       <SocialMedia />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
