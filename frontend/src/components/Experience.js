@@ -10,11 +10,12 @@ const Experience = () => {
       period: "Present",
       status: "Current",
       achievements: [
-        "Established and manage an academy focused on quality chess education",
-        "Lead training programs (online & offline) tailored to student goals",
-        "Mentor players from grassroots to competitive level, with proven rating growth",
-        "Built a supportive and interactive learning culture at the academy",
-        "Coached beginners to achieve official FIDE ratings and tournament wins"
+        "Trained 50+ students from beginners to competitive level",
+        "Helped students achieve 200+ rating point improvements",
+        "Created YouTube content reaching 1000+ chess enthusiasts",
+        "Coached 15+ students to their first FIDE ratings",
+        "Trained students to become state champions in Karnataka & Goa",
+        "Coached students across 15+ countries globally"
       ]
     }
   ];
