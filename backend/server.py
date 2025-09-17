@@ -137,7 +137,6 @@ async def create_contact_submission(contact_data: ContactFormCreate):
             email=contact_data.email,
             phone=contact_data.phone,
             experience=contact_data.experience,
-            sessionType=contact_data.sessionType,
             message=contact_data.message
         )
         
