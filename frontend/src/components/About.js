@@ -56,13 +56,13 @@ const About = () => {
               <ul className="qualifications-list">
                 <li>Peak FIDE Rating: 1665</li>
                 <li>
-                  <a 
+                  Certified FIDE <a 
                     href="https://drive.google.com/file/d/1I-czhTw_gMMCkhjN-1G7RDgWGQJHyj7g/view?usp=sharing" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="fide-profile-link"
                   >
-                    Certified FIDE National Instructor
+                    National Instructor
                   </a>
                 </li>
                 <li>
