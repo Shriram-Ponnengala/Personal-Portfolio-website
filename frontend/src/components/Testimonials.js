@@ -81,7 +81,7 @@ const Testimonials = () => {
             className="btn-primary"
             onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
           >
-            Book Your First Session
+            Connect with Me
           </button>
         </div>
       </div>
