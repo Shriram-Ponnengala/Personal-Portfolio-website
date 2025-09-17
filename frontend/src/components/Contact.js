@@ -256,6 +256,24 @@ const Contact = () => {
             </div>
             
             <div className="form-group">
+              <label htmlFor="sessionType" className="form-label">Session Type</label>
+              <select
+                id="sessionType"
+                name="sessionType"
+                value={formData.sessionType || ''}
+                onChange={handleInputChange}
+                className="form-select"
+              >
+                <option value="">Select session type</option>
+                <option value="consultation">Free Consultation</option>
+                <option value="individual">Individual Coaching</option>
+                <option value="group">Group Classes</option>
+                <option value="tournament-prep">Tournament Preparation</option>
+                <option value="online">Online Training</option>
+              </select>
+            </div>
+            
+            <div className="form-group">
               <label htmlFor="message" className="form-label">Message</label>
               <textarea
                 id="message"
