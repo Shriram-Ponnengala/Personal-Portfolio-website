@@ -139,6 +139,7 @@ async def create_contact_submission(contact_data: ContactFormCreate):
             email=contact_data.email,
             phone=contact_data.phone,
             experience=contact_data.experience,
+            sessionType=contact_data.sessionType,
             message=contact_data.message
         )
         
@@ -146,9 +147,12 @@ async def create_contact_submission(contact_data: ContactFormCreate):
         result = await db.contacts.insert_one(contact.dict())
         
         if result.inserted_id:
+            # Send notifications (WhatsApp & Email)
+            await send_notifications(contact)
+            
             return ContactFormResponse(
                 success=True,
-                message="Contact form submitted successfully! I'll get back to you within 24 hours.",
+                message="Session booking received! You'll receive instant WhatsApp & email notifications with response within 2-4 hours.",
                 data={
                     "id": contact.id,
                     "createdAt": contact.createdAt.isoformat()
