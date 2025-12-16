@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, Phone, MapPin, MessageCircle, Instagram, Linkedin, Facebook, Crown } from "lucide-react";
+import { Mail, Phone, MapPin, MessageCircle, Instagram, Linkedin, Facebook, Crown, Zap } from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
@@ -47,6 +47,12 @@ const Contact = () => {
       icon: <Facebook size={20} />,
       url: "https://www.facebook.com/shriramponnengala",
       color: "#1877F2"
+    },
+    {
+      name: "Chess.com",
+      icon: <Zap size={20} />,
+      url: "https://www.chess.com/member/shriram_ponnengala",
+      color: "#7FA650"
     },
     {
       name: "Lichess",
