@@ -1,5 +1,5 @@
 import React from "react";
-import { MessageCircle, Instagram, Linkedin, Facebook, Crown, ExternalLink } from "lucide-react";
+import { MessageCircle, Instagram, Linkedin, Facebook, Crown, ExternalLink, Zap } from "lucide-react";
 
 const SocialMedia = () => {
   const socialLinks = [
@@ -34,6 +34,14 @@ const SocialMedia = () => {
       description: "Community updates & chess discussions",
       color: "#1877F2",
       bgColor: "rgba(24, 119, 242, 0.1)"
+    },
+    {
+      name: "Chess.com",
+      icon: <Zap size={24} />,
+      url: "https://www.chess.com/member/shriram_ponnengala",
+      description: "Online games, tournaments & chess community",
+      color: "#7FA650",
+      bgColor: "rgba(127, 166, 80, 0.1)"
     },
     {
       name: "Lichess",
