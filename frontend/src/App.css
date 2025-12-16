@@ -1488,6 +1488,17 @@ html {
   color: var(--text-inverse);
 }
 
+/* Force hide any emergent popups */
+#emergent-badge,
+[id*="emergent"],
+[class*="emergent"],
+a[href*="emergent.sh"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
 /* Focus styles for accessibility */
 .btn-primary:focus,
 .btn-secondary:focus,
